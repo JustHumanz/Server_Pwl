@@ -1,0 +1,1 @@
+docker run --name mariadb-web -v /opt/mysql/:/var/lib/mariadb -e MYSQL_ROOT_PASSWORD=***** -d -p 3306:3306 mariadb
