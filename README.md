@@ -12,7 +12,8 @@ Shell : Zsh
 #### <p align="center"> Penjelasan </p>  
 Diserver ini saya menggunakkan Nginx sebagai reverse proxy dan httpd(apache) sebagai backendnya dikarenakan nginx kurang begitu bagus untuk menghandle dynamic file seperti php,jika ingin melihat pembahasannya bisa [disini](https://justhumanz.me/index.php/2019/11/09/nginx-as-a-reverse-proxy-for-httpd/).  
 
-![reverse-proxy](https://www.unixhops.com/wp-content/uploads/2015/03/apache-nginx-reverse-proxy-diagram.jpg)  
+![reverse-proxy](https://www.unixhops.com/wp-content/uploads/2015/03/apache-nginx-reverse-proxy-diagram.jpg)
+![aa](https://raw.githubusercontent.com/JustHumanz/Server_Pwl/master/img/phpinfo.png)  
 disini saya hanya menjelaskan config yang saya anggap penting saja,tidak menjelaskan cara installasi dan config dasar     
 
 ### Nginx conf
@@ -106,8 +107,9 @@ dikarenakan saya dan paji ingin coba coba dan tidak mau ribet maka diputuskan ba
 ```
 docker run --name mariadb-web -v /opt/mysql/:/var/lib/mariadb -e MYSQL_ROOT_PASSWORD=***** -d -p 3306:3306 mariadb
 ```
+![mysql](https://raw.githubusercontent.com/JustHumanz/Server_Pwl/master/img/db1.png)
 volume storage kita bind ke /opt/mysql/ dikarenakan jika container terhapus maka data didalamnya ikut terhapus  
-
+![mysql2](https://raw.githubusercontent.com/JustHumanz/Server_Pwl/master/img/db2.png)
 ### Script auto backup
 backup adalah hal yang sangat sangat penting dari sebuah system dan saya males ssh cuman buat backup saja maka dari itu saya membuat script awto backup system untuk pencegahan jika terjadi hal hal yang mengancam keselamatan data
 ```
