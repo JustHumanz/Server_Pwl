@@ -66,7 +66,7 @@ location / {
     
  }
 ```
-proxy_pass itu maksudnya semua requst akan dikirim ke http://localhost:8080 (apache) dan disini tugas nginx hanya sebagai reverse proxy dengan tambahan mengkompres file yang akan dikirim  
+proxy_pass itu maksudnya semua requst akan dikirim ke http://localhost:8080 (apache) dan disini tugas nginx hanya sebagai reverse proxy yang menangani static file dengan tambahan mengkompres file yang akan dikirim  
 ```
 location ~ /\.ht    {return 404;}
 location ~ /\.svn/  {return 404;}
